@@ -1,18 +1,9 @@
 defmodule Clikanban do
-  @moduledoc """
-  Documentation for `Clikanban`.
-  """
+   def main do
+    case Prompt.select("Please select an option", ["New"]) do
+      "New" -> Card.create
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Clikanban.hello()
-      :world
-
-  """
-  def hello do
-    :world
+      _ -> "Please select an valid option"
+    end
   end
 end
