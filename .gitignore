@@ -25,3 +25,5 @@ clikanban-*.tar
 .elixir_ls
 notes.md
 database.db
+
+my-env
